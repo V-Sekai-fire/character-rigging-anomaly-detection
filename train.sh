@@ -1,1 +1,1 @@
-anomalib train --config avatar_rigging.yaml # --print_config
+anomalib train --config avatar_rigging.yaml --model Patchcore # --print_config
