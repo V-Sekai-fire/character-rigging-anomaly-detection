@@ -5,7 +5,7 @@ data:
     root: .
     normal_dir: normal
     abnormal_dir: lack_spring_bone
-    train_batch_size: 32
+    train_batch_size: 1
     eval_batch_size: 32
     num_workers: 8
     task: segmentation
