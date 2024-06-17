@@ -1,1 +1,1 @@
-anomalib predict --return_predictions true --ckpt_path results/Patchcore/avatar_rigging/v2/weights/lightning/model.ckpt --config avatar_rigging.yaml --model Patchcore
+anomalib predict --return_predictions false --ckpt_path results/EfficientAd/avatar_rigging/v8/weights/lightning/model.ckpt --config avatar_rigging.yaml --model Patchcore
