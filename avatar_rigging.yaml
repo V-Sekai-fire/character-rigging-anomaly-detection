@@ -15,7 +15,7 @@ data:
     root: dataset
     normal_dir: train/normal
     abnormal_dir: val
-    train_batch_size: 2
+    train_batch_size: 32
     eval_batch_size: 32
     num_workers: 8
     task: segmentation
