@@ -13,12 +13,12 @@ data:
   init_args:
     name: avatar_rigging
     root: dataset
-    normal_dir: train/normal
-    abnormal_dir: val
+    normal_dir: train
+    abnormal_dir: anomaly
     train_batch_size: 1
     eval_batch_size: 32
     num_workers: 8
-    task: segmentation
+    task: classification
     train_transform: null
     eval_transform: null
     test_split_mode: synthetic
