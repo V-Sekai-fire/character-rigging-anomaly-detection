@@ -1,7 +1,7 @@
 model:
   class_path: anomalib.models.EfficientAd
   init_args:
-    imagenet_dir: ./datasets/imagenette2
+    imagenet_dir: ./dataset/train
     teacher_out_channels: 384
     model_size: S
     lr: 0.0001
