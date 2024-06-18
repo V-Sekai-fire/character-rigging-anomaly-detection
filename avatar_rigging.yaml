@@ -1,9 +1,9 @@
 model:
   class_path: anomalib.models.EfficientAd
   init_args:
-    imagenet_dir: ./dataset/train
+    imagenet_dir: ./datasets/imagenette2
     teacher_out_channels: 384
-    model_size: M
+    model_size: S
     lr: 0.0001
     weight_decay: 1.0e-05
     padding: false
@@ -13,16 +13,15 @@ data:
   init_args:
     name: avatar_rigging
     root: dataset
-    normal_dir: train/nominal
-    abnormal_dir: train/clipping
+    normal_dir: train/normal
+    abnormal_dir: val
     train_batch_size: 1
     eval_batch_size: 32
     num_workers: 8
-    task: classification
+    task: segmentation
     train_transform: null
     eval_transform: null
     test_split_mode: synthetic
     test_split_ratio: 0.2
     val_split_mode: same_as_test
     val_split_ratio: 0.5
-    image_size: [1920, 1080]

@@ -1,1 +1,1 @@
-anomalib predict --return_predictions false --config results/EfficientAd/avatar_rigging/latest/config.yaml --ckpt_path results/EfficientAd/avatar_rigging/latest/weights/lightning/model.ckpt
+anomalib predict --return_predictions false --ckpt_path results/EfficientAd/avatar_rigging/v8/weights/lightning/model.ckpt --config avatar_rigging.yaml
