@@ -11,5 +11,6 @@ build:
     - "openvino==2024.2.0"
     - "lightning==2.3.0"
     - "scikit-learn==1.5.0"
+    - setuptools
 train: "train.py:train"
 
