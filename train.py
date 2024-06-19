@@ -21,7 +21,7 @@ def train(normal_dir: list[Path] = Input(description="A file containing training
     for dir_path in normal_dir:
         for file_path in dir_path.iterdir():
             if file_path.is_file():
-                shutil.copy(file_path, str()) 
+                shutil.copy(file_path, str(_dataset_normal_dir)) 
     datamodule = Folder(name="hazelnut_toy", normal_dir=str(_normal_dir), root=str(_dataset_dir), abnormal_dir=None, normal_test_dir=None, mask_dir=None, normal_split_ratio=0.2, extensions=None, train_batch_size=1, eval_batch_size=32, num_workers=8, task=TaskType.SEGMENTATION, image_size=None, transform=None, train_transform=None, eval_transform=None, test_split_mode=TestSplitMode.SYNTHETIC, test_split_ratio=0.2, val_split_mode=ValSplitMode.FROM_TEST, val_split_ratio=0.5, seed=None)
     datamodule.setup()
     model = EfficientAd(imagenet_dir=_dataset_dir, teacher_out_channels=384, model_size=EfficientAdModelSize.S, lr=0.0001, weight_decay=1e-05, padding=False, pad_maps=True)
