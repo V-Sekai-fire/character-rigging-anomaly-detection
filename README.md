@@ -3,6 +3,7 @@
 ```
 pip3 install anomalib
 anomalib install --option core
+cog train --input
 ```
 
 In vr generate photos of normal images of avatar motion. Use to detect abnormal avatar animation.
