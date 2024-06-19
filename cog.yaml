@@ -3,6 +3,7 @@ build:
   system_packages:
     - "libgl1-mesa-glx"
     - "libglib2.0-0"
+    - "python-setuptools"
   python_version: "3.10"
   cuda: "11.5" # Query nvcc --version
   python_packages:
@@ -11,6 +12,5 @@ build:
     - "openvino==2024.2.0"
     - "lightning==2.3.0"
     - "scikit-learn==1.5.0"
-    - setuptools
 train: "train.py:train"
 
