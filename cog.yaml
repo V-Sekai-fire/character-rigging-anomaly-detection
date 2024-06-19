@@ -1,3 +1,11 @@
 build:
   python_version: "3.10"
+  python_packages:
+    - "torch==2.3.1"
+    - "anomalib==1.1.0"
+    - "openvino==2024.2.0"
+    - "lightning==2.3.0"
+  run:
+    - anomalib install
 train: "train.py:train"
+

@@ -2,3 +2,5 @@
 results
 pre_trained
 datasets/imagenette2
+.cog
+__pycache__
