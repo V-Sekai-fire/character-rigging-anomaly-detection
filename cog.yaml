@@ -10,5 +10,6 @@ build:
     - "anomalib[core]==1.1.0"
     - "openvino==2024.2.0"
     - "lightning==2.3.0"
+    - "scikit-learn==1.5.0"
 train: "train.py:train"
 
