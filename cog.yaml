@@ -7,7 +7,7 @@ build:
   cuda: "11.5" # Query nvcc --version
   python_packages:
     - "torch==2.3.1"
-    - "anomalib[full]==1.1.0"
+    - "anomalib[core]==1.1.0"
     - "openvino==2024.2.0"
     - "lightning==2.3.0"
 train: "train.py:train"
